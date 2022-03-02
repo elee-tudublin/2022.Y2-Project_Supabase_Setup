@@ -111,10 +111,12 @@ done
 # test
 
 # this script
-# ./messages.sh
+# ./insert.sh
 
 # pub
 # mosquitto_pub -h broker.hivemq.com -t my-event-log/computer/description/level/service/type/user -m 3,crash,error,database,update,admin
 
-echo "To publish, use another terminal, e.g."
+echo "run this script (./insert.sh) in one terminal"
+echo "To publish, open another terminal, then:"
 echo "mosquitto_pub -h broker.hivemq.com -t my-event-log/computer/description/level/service/type/user -m 3,crash,error,database,update,admin"
+echo "check the first terminal and your database for results"
